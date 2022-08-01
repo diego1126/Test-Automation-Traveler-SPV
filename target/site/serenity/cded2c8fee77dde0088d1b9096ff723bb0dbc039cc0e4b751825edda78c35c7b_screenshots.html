@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="6bae37751aea751186a77b3bcf39eec9ed5b5a834ffdc6d10f4b9ab1c7ba86d5.html">Traveler Assistance - Home</a></span>
+                > <span class="truncate-60"><a
+                    href="cded2c8fee77dde0088d1b9096ff723bb0dbc039cc0e4b751825edda78c35c7b.html">Quote travel assistance </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-07-2022 08:43</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Traveler Assistance - Home </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user<br />
+I want to quote travel insurance<br />
+To travel more calmly to my destination
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="bca18eb34184f466810ee7a90d04748e21a2df6dea7311083e75ce6b8ed2a2f5.html">Tag1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Quote travel assistance
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given I want to quote my travel insurance<br>When Enter my destiny information &lt;name&gt; and &lt;email&gt; and &lt;mobile&gt; and &lt;new_destiny&gt; and &lt;discount_code&gt;<br>Then I can quote insurance for my trip</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="e613e9e31db41aae5a6e64d3d3cc12ae0301e2b62eb4606578a3370589b212af.png" title=" 1: Quote travel assistance ({name=Diego Alvarez, email=diego.alvarez@castor.com.co, mobile=3012458709, new_destiny=Argentina, discount_code=21XJENN})" width="1366"/>
+                <img src="e613e9e31db41aae5a6e64d3d3cc12ae0301e2b62eb4606578a3370589b212af.png" title=" Given I want to quote my travel insurance" width="1366"/>
+                <img src="e613e9e31db41aae5a6e64d3d3cc12ae0301e2b62eb4606578a3370589b212af.png" title=" User opens the Home page" width="1366"/>
+                <img src="e613e9e31db41aae5a6e64d3d3cc12ae0301e2b62eb4606578a3370589b212af.png" title=" Given I want to quote my travel insurance (completed)" width="1366"/>
+                <img src="d080d5dbb19239144b56c3710e20f114cb65b43ddfeaff1cdd1abdc55aed04a0.png" title=" When Enter my destiny information Diego Alvarez and diego.alvarez@castor.com.co and 3012458709 and Argentina and 21XJENN" width="1366"/>
+                <img src="d080d5dbb19239144b56c3710e20f114cb65b43ddfeaff1cdd1abdc55aed04a0.png" title=" User quote travel assistance tks" width="1366"/>
+                <img src="d080d5dbb19239144b56c3710e20f114cb65b43ddfeaff1cdd1abdc55aed04a0.png" title=" User clicks on List Origin" width="1366"/>
+                <img src="ce2f4c4bb33622876fd480a87227efc2bacb2b958b9c370aae16a316b6005b0c.png" title=" User clicks on Select Origin" width="1366"/>
+                <img src="3d1f25458b7dfc6434abb1c80b84499a2c5f9271a1c62ba7cd72baf7cc2f2583.png" title=" User clicks on List destiny" width="1366"/>
+                <img src="8fd1cd2ea2e67862d4cdb5cf3ab4dd250551152377e0959a628db0afd87cd337.png" title=" User clicks on Select Destiny" width="1366"/>
+                <img src="7319a253272b48bce8be276321d682dbfec3fd4340f7feffa36e3d88e660bff2.png" title=" User clicks on Calendar Exit" width="1366"/>
+                <img src="1d24ce76b25d190108108433e44f85bb3c471e75fdd8022e957b39f911d2a942.png" title=" User clicks on Select departure day" width="1366"/>
+                <img src="2a1c6e54e351df5b74d90010efa27bcff6aa27634489a47a21da9cf6361f3434.png" title=" User clicks on Select arrival day" width="1366"/>
+                <img src="0ee18d653b1c08cfff117c061caf47a4a204cb026148b5ea608cf3cdfdd80c82.png" title=" User clicks on Add person Button" width="1366"/>
+                <img src="adcdd3a1180c17ba0018ee3b6f9f321e68a38e3fbd6bb3db53b42d8d09d86323.png" title=" User clicks on Continue Button" width="1366"/>
+                <img src="c6aca167d4601be9735d9b41086c42c9cbae6d4349989edba05873a911f1555d.png" title=" User enters 'Diego Alvarez' into Full Name Input Field" width="1366"/>
+                <img src="4c30a8dbb2a421ec30920a16355b32417f5ca27a8e336d47c2cc250260eeb1c8.png" title=" User enters 'diego.alvarez@castor.com.co' into Email Input Field" width="1366"/>
+                <img src="ccd31c61aa182f2298a104d81eafa848e7f4193f0a6ec789be3b579b9ca6bef5.png" title=" User enters '3012458709' into Mobile Input Field" width="1366"/>
+                <img src="14a34fe3115363aa953e93ac19911499966ccd3dbee73129a0b507ff374df04b.png" title=" User enters TAB into Mobile Input Field" width="1366"/>
+                <img src="14a34fe3115363aa953e93ac19911499966ccd3dbee73129a0b507ff374df04b.png" title=" User enters TAB into Mobile Input Field" width="1366"/>
+                <img src="413404434639e61edc1b1bbfb5d28cce5030724b39719d6a54c1af6c4579a570.png" title=" User enters ENTER into Cotiza Gratis Button" width="1366"/>
+                <img src="1ed522436b3edd43610201c154d5d3130995e9c82e1ae0bf52af18966edb09db.png" title=" User wait" width="1366"/>
+                <img src="1ed522436b3edd43610201c154d5d3130995e9c82e1ae0bf52af18966edb09db.png" title=" User quote travel assistance tks (completed)" width="1366"/>
+                <img src="16fb81330d219a1917cd497b311c0e932d65f62d9431347bffa008b6243874e7.png" title=" User requote tks" width="1366"/>
+                <img src="16fb81330d219a1917cd497b311c0e932d65f62d9431347bffa008b6243874e7.png" title=" User clicks on List new destiny" width="1366"/>
+                <img src="71a44416b74dd75785e9e34e1ed0b9942b111fce23a16679b361f60c6f03eb25.png" title=" User enters CONTROL,'a' into List new destiny" width="1366"/>
+                <img src="f103d6f9d5c24249a7ced98756b8addfaf92a8b61e02797ce880303c63160ff7.png" title=" User enters 'Argentina' into List new destiny" width="1366"/>
+                <img src="157026b8d824ff6a89c75d2beda955a84c31ffacf19ff241d00edb941140c36a.png" title=" User clicks on //*[contains(text(),'Argentina')]" width="1366"/>
+                <img src="bfecece7a70cac7a4285283f4fe82db32213b71b286a540f33113fca5fa9e42d.png" title=" User clicks on Calendar Exit" width="1366"/>
+                <img src="6f2ecf4f092768258c2022eed4edcfca50a881a5f5685017903ae4e2b380fcc5.png" title=" User clicks on Select departure day" width="1366"/>
+                <img src="e6ca3faa38ab42e62a467ad5291d42bb9b622f8c4d0b45d4647e901a5177ed09.png" title=" User clicks on Select arrival day" width="1366"/>
+                <img src="b9ae4791768c52c24289f9d29136a232da4fb94a2ba6716a08cd5c8e36684046.png" title=" User enters TAB into Continue Button" width="1366"/>
+                <img src="3400b93951dcefbf72bc876f10fa8257988741314af6ebf6f9b6cc56dbe38562.png" title=" User enters '21XJENN' into Discount Code Button" width="1366"/>
+                <img src="e84a9e80f6d3987fe5dd43719596db47eb4bf18cfac837c7a9708648be2f6a24.png" title=" User enters TAB into Discount Code Button" width="1366"/>
+                <img src="bb3723cf1b0acbfc73d258ee287f562322916ced23cd89e025965e5792e18306.png" title=" User enters ENTER into Requote Button" width="1366"/>
+                <img src="029684e629c6536e3ecd3741d73fb925715141e054dfce99dcd5a94d08c651a4.png" title=" User wait" width="1366"/>
+                <img src="029684e629c6536e3ecd3741d73fb925715141e054dfce99dcd5a94d08c651a4.png" title=" User requote tks (completed)" width="1366"/>
+                <img src="029684e629c6536e3ecd3741d73fb925715141e054dfce99dcd5a94d08c651a4.png" title=" When Enter my destiny information Diego Alvarez and diego.alvarez@castor.com.co and 3012458709 and Argentina and 21XJENN (completed)" width="1366"/>
+                <img src="029684e629c6536e3ecd3741d73fb925715141e054dfce99dcd5a94d08c651a4.png" title=" Then I can quote insurance for my trip" width="1366"/>
+                <img src="029684e629c6536e3ecd3741d73fb925715141e054dfce99dcd5a94d08c651a4.png" title=" 1: Quote travel assistance ({name=Diego Alvarez, email=diego.alvarez@castor.com.co, mobile=3012458709, new_destiny=Argentina, discount_code=21XJENN}) (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.4.25</span>
+</div>
+</body>
+</html>
