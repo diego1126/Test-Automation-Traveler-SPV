@@ -42,6 +42,7 @@ public class QuoteTravelAssistanceTKS implements Task {
                 SendKeys.of(Keys.ENTER).into(QuoteTravelAssistanceUI.BTN_MOBILE),
                 //Click.on(QuoteTravelAssistanceUI.BTN_MOBILE),
 
+
                 Wait.oneTime(15000)
         );
 
