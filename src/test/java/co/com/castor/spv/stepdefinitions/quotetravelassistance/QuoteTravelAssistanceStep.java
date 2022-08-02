@@ -2,6 +2,7 @@ package co.com.castor.spv.stepdefinitions.quotetravelassistance;
 
 import co.com.castor.spv.tasks.quotetravelassistance.QuoteTravelAssistanceTKS;
 import co.com.castor.spv.tasks.requote.RequoteTKS;
+import co.com.castor.spv.tasks.selectplan.SelectPlanTKS;
 import co.com.castor.spv.utils.HomePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -24,7 +25,8 @@ public class QuoteTravelAssistanceStep extends HomePage {
     public void enter_my_destiny_information(String name, String email,String mobile,String new_destiny, String discount_code) {
         user.wasAbleTo(
                 QuoteTravelAssistanceTKS.quoteTravel(name,email,mobile),
-                RequoteTKS.requote(new_destiny,discount_code)
+                RequoteTKS.requote(new_destiny,discount_code),
+                SelectPlanTKS.selectPlan()
         );
     }
 
