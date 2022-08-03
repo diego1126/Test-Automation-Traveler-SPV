@@ -27,7 +27,6 @@ public class SelectPlanTKS implements Task {
 
                 Wait.oneTime(8000)
         );
-
     }
     public static SelectPlanTKS selectPlan() {
         return instrumented(SelectPlanTKS.class) ;

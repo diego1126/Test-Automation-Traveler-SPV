@@ -10,5 +10,4 @@ public class SelectPlanUI {
     public static final Target BTN_VIEW_DETAIL_CLOSE =Target.the ("View Detail Close Window").located(By.xpath("//*[@class=\"close-modal btn f-30 p-0 pr-4 text-white btn-mt\"]"));
 
 
-
 }
