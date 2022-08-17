@@ -33,6 +33,7 @@ public class QuoteTravelAssistanceTKS implements Task {
                 //Click.on(QuoteTravelAssistanceUI.BTN_ARRIVAL_CALENDAR),
                 Click.on(QuoteTravelAssistanceUI.BTN_DAY_ARRIVAL),
                 Click.on(QuoteTravelAssistanceUI.BTN_ADD_PERSON),
+                Click.on(QuoteTravelAssistanceUI.BTN_ADD_PERSON),
                 Click.on(QuoteTravelAssistanceUI.BTN_CONTINUE),
                 Enter.theValue(this.name).into(QuoteTravelAssistanceUI.TXT_FULL_NAME),
                 Enter.theValue(this.email).into(QuoteTravelAssistanceUI.TXT_EMAIL),

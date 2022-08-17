@@ -24,6 +24,7 @@ public class SelectPlanTKS implements Task {
                 Click.on(SelectPlanUI.BTN_VIEW_DETAIL_REPATRIATION_EMERGENCY),
                 Wait.oneTime(2000),
                 Click.on(SelectPlanUI.BTN_VIEW_DETAIL_CLOSE),
+                Click.on(SelectPlanUI.BTN_BUY_PLAN),
 
                 Wait.oneTime(8000)
         );
