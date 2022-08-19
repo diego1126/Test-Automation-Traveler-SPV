@@ -56,4 +56,38 @@ public class CalculateDate {
 
     }
 
+    public static String MonthYearCal() {
+        SimpleDateFormat getYearFormat = new SimpleDateFormat("yyyy");
+        Date fecha = new Date();
+        int month = (fecha.getMonth());
+        String currentYear = getYearFormat.format(fecha);
+        String[] monthName = {"JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"};
+
+        return "//span[text()='"+monthName[month]+" "+String.valueOf(currentYear)+"']";
+    }
+
+    public static String MonthCal(){
+        SimpleDateFormat getYearFormat = new SimpleDateFormat("yyyy");
+        Date fecha = new Date();
+        int month = (fecha.getMonth());
+        String[] monthName = {"JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"};
+
+        return "//*[contains(text(),'"+monthName[month]+"')]";
+    }
+
+    public static String DayCal(){
+        Date fecha = new Date();
+        int day = (fecha.getDate());
+        return "//div[contains(text(),'"+day+"')]";
+    }
+
+    public static String CurrentYearValue(int years) {
+        SimpleDateFormat getYearFormat = new SimpleDateFormat("yyyy");
+        Date fecha = new Date();
+        int currentYear = Integer.parseInt(getYearFormat.format(fecha));
+        currentYear = currentYear - years;
+
+        return "//*[contains(text(),'"+String.valueOf(currentYear)+"')]";
+    }
+
 }
