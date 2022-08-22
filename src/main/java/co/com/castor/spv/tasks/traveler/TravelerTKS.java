@@ -23,6 +23,10 @@ public class TravelerTKS implements Task {
                 Click.on(TravelerUI.BTN_TARVELER_1_BIRTH_MONTH),
                 Click.on(TravelerUI.BTN_TARVELER_1_BIRTH_DAY),
                 Enter.theValue("58471254").into(TravelerUI.BTN_TARVELER_1_OFFICIAL_DOC),
+                Click.on(TravelerUI.BTN_TARVELER_1_BAGGAGE),
+                Click.on(TravelerUI.BTN_TARVELER_1_FLIGHT_DELAY),
+                Click.on(TravelerUI.BTN_TARVELER_1_MY_TRIP),
+                Click.on(TravelerUI.BTN_TARVELER_1_PTOMOTIONS),
 
                 Wait.oneTime(8000)
         );
