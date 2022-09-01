@@ -33,7 +33,7 @@ public class RequoteTKS implements Task {
                 Click.on(this.xpath_new_destiny),
                 Click.on(RequoteUI.BTN_EXIT_CALENDAR),
                 Click.on(RequoteUI.BTN_DAY_EXIT),
-                //Click.on(RequoteUI.BTN_ARRIVAL_CALENDAR),
+                Click.on(RequoteUI.BTN_ARRIVAL_CALENDAR),
                 Click.on(RequoteUI.BTN_DAY_ARRIVAL),
                 SendKeys.of(Keys.TAB).into(RequoteUI.BTN_CONTINUE),
                 Enter.theValue(this.discount_code).into(RequoteUI.BTN_DISCOUNT_CODE),

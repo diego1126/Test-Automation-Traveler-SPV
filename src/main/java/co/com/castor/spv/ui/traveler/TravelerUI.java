@@ -17,11 +17,8 @@ public class TravelerUI {
     public static final Target BTN_TARVELER_1_BAGGAGE =Target.the ("Baggage Check Box").located(By.xpath("//*[text()='Equipaje']"));
     public static final Target BTN_TARVELER_1_FLIGHT_DELAY =Target.the ("Flight delay Check Box").located(By.xpath("//*[text()='Retraso de vuelo']"));
     public static final Target BTN_TARVELER_1_MY_TRIP =Target.the ("My trip Check Box").located(By.xpath("//*[contains(text(),'Mi viaje')]"));
-    public static final Target BTN_TARVELER_1_PTOMOTIONS =Target.the ("Promotions Check Box").located(By.xpath("/html/body/app-root/app-checkout/div/div/div[2]/div[2]/div/div/form/mat-horizontal-stepper/div[2]/div[2]/checkout-second-step/div/div/div[1]/div[1]/div/input"));
-
-
-
-
+    public static final Target BTN_TARVELER_1_PROMOTIONS =Target.the ("Promotions Check Box").located(By.xpath("/html/body/app-root/app-checkout/div/div/div[2]/div[2]/div/div/form/mat-horizontal-stepper/div[2]/div[2]/checkout-second-step/div/div/div[1]/div[1]/div/input"));
+    public static final Target BTN_TARVELER_1_GO_TO_PAY =Target.the ("Go to Payment").located(By.xpath("//*[contains(text(),'Ir al pago')]"));
 
 }
 

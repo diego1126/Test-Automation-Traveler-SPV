@@ -26,7 +26,21 @@ public class TravelerTKS implements Task {
                 Click.on(TravelerUI.BTN_TARVELER_1_BAGGAGE),
                 Click.on(TravelerUI.BTN_TARVELER_1_FLIGHT_DELAY),
                 Click.on(TravelerUI.BTN_TARVELER_1_MY_TRIP),
-                Click.on(TravelerUI.BTN_TARVELER_1_PTOMOTIONS),
+                Click.on(TravelerUI.BTN_TARVELER_1_PROMOTIONS),
+                Click.on(TravelerUI.BTN_TARVELER_1_GO_TO_PAY),
+                Enter.theValue("Carolina").into(TravelerUI.TXT_TARVELER_1_NAME),
+                Enter.theValue("Gomez Lopez").into(TravelerUI.TXT_TARVELER_1_LAST_NAME),
+                Click.on(TravelerUI.BTN_TARVELER_1_BIRTH_DATE),
+                /* Select data Travel 2 */
+                Click.on(TravelerUI.BTN_TARVELER_1_BIRTH_MONTH_YEAR),
+                Click.on(TravelerUI.BTN_TARVELER_1_BIRTH_YEAR),
+                Click.on(TravelerUI.BTN_TARVELER_1_BIRTH_MONTH),
+                Click.on(TravelerUI.BTN_TARVELER_1_BIRTH_DAY),
+                Enter.theValue("23019874").into(TravelerUI.BTN_TARVELER_1_OFFICIAL_DOC),
+                Click.on(TravelerUI.BTN_TARVELER_1_BAGGAGE),
+                Click.on(TravelerUI.BTN_TARVELER_1_FLIGHT_DELAY),
+                Click.on(TravelerUI.BTN_TARVELER_1_GO_TO_PAY),
+
 
                 Wait.oneTime(8000)
         );

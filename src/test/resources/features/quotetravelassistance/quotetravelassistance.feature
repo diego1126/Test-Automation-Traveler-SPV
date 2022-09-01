@@ -10,4 +10,4 @@ Feature: Traveler assistance - Home
     Then I can quote insurance for my trip
     Examples:
       | name        |email                      |mobile    |new_destiny|discount_code|
-      |Diego Alvarez|diego.alvarez@castor.com.co|3012458709|Argentina  |21XJENN      |
+      |Diego Alvarez|diego.martinez@gmail.com  |3052458709|Argentina  |21XJENN      |
